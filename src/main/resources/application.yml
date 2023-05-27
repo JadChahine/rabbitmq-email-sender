@@ -1,0 +1,10 @@
+application:
+  rabbit-mq-properties:
+    host: ${RABBITMQ_HOST:localhost}
+    port: ${RABBITMQ_PORT:5672}
+    virtualHost: ${RABBITMQ_VIRTUAL_HOST:/}
+    userName: ${RABBITMQ_USERNAME:guest}
+    password: ${RABBITMQ_PASSWORD:guest}
+    exchangeName: ${RABBITMQ_EXCHANGE_NAME:jad-test-exchange}
+    routingKeyName: ${RABBITMQ_ROUTING_KEY_NAME:jad-test-routing-key}
+    queueName: ${RABBITMQ_QUEUE_NAME:jad-test-queue}
